@@ -10,6 +10,7 @@
     "lint": "eslint --ext .ts,.tsx ."
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.1",
@@ -18,12 +19,14 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "next": "10.0.7",
     "react": "17.0.1",
+    "react-bootstrap": "^1.5.0",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "4.0.0",
     "prettier": "^2.2.1",
     "prettier-eslint-cli": "^5.0.0",
     "rxjs": "^6.6.6",

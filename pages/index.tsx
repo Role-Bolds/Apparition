@@ -1,65 +1,30 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Home():any {
+export const config = {amp: 'hybrid'}
+
+function Construction(props):JSX.Element {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Change me fucker</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+          <div style={{height: '50em',display: 'flex', alignItems:'center',justifyContent:'center'}}>
+            <Head>
+              <title>Role'Bolds: Under Construction</title>
+            </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+            <div className="card text-white bg-warning mb-3" style={{maxWidth: '18rem', margin: 0}}>
+              <div className="card-header">Under Construction</div>
+              <div className="card-body">
+                Check us out on
+                <br/>
+                <div className="btn-group" role="group" aria-label="Areas">
+                <button className="btn btn-info" type="button"><Link href='/dicord'><a className='btn'>Discord</a></Link>
+                </button>
+                <button className="btn btn-primary" type="button"><Link  href='https://github.com/Charisma-Bonus'><a className='btn'>Github</a></Link></button>
+                </div>
+              </div>
+            </div>
+          </div>
   )
 }
+
+export default Construction
